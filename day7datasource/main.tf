@@ -5,7 +5,8 @@ provider "aws" {
 data "aws_subnet" "selected" {
     filter {
       name="tag:Name"
-      values=["subnet_1"]
+      values=["subnet_1"]#our subnet name
+
     }
   
 }
