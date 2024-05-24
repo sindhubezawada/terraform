@@ -1,0 +1,10 @@
+resource "aws_instance" "sindhu" {
+    ami="ami-0cc9838aa7ab1dce7"
+        instance_type = "t2.micro"
+	    key_name="git"
+	        count=2
+		    tags={
+		            Name="sand"
+			        }
+				  
+				  }
